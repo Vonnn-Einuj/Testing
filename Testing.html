@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Simple Calculator</title>
-</head>
-<body>
-	<H5>Hello</H5>
-	<form>
-		<label>Enter first number:</label>
-		<input type="number" name="num1"><br><br>
-		<label>Enter second number:</label>
-		<input type="number" name="num2"><br><br>
-		<input type="button" value="Add" onclick="document.getElementById('result').value=parseInt(document.getElementsByName('num1')[0].value)+parseInt(document.getElementsByName('num2')[0].value)">&nbsp;
-		<input type="button" value="Subtract" onclick="document.getElementById('result').value=parseInt(document.getElementsByName('num1')[0].value)-parseInt(document.getElementsByName('num2')[0].value)">&nbsp;
-		<input type="button" value="Multiply" onclick="document.getElementById('result').value=parseInt(document.getElementsByName('num1')[0].value)*parseInt(document.getElementsByName('num2')[0].value)">&nbsp;
-		<input type="button" value="Divide" onclick="document.getElementById('result').value=parseInt(document.getElementsByName('num1')[0].value)/parseInt(document.getElementsByName('num2')[0].value)"><br><br>
-		<label>Result:</label>
-		<input type="text" id="result" name="result">
-	</form>
-</body>
+  <head>
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <h2>Hello!</h2>
+    <form>
+      <label>Enter first number:</label>
+      <input type="number" name="num1" /><br /><br />
+      <label>Enter second number:</label>
+      <input type="number" name="num2" /><br /><br />
+      <input
+        type="button"
+        value="Add"
+        onclick="document.getElementById('result').value=parseInt(document.getElementsByName('num1')[0].value)+parseInt(document.getElementsByName('num2')[0].value)"
+      />&nbsp;
+      <input
+        type="button"
+        value="Subtract"
+        onclick="document.getElementById('result').value=parseInt(document.getElementsByName('num1')[0].value)-parseInt(document.getElementsByName('num2')[0].value)"
+      />&nbsp;
+      <input
+        type="button"
+        value="Multiply"
+        onclick="document.getElementById('result').value=parseInt(document.getElementsByName('num1')[0].value)*parseInt(document.getElementsByName('num2')[0].value)"
+      />&nbsp;
+      <input
+        type="button"
+        value="Divide"
+        onclick="document.getElementById('result').value=parseInt(document.getElementsByName('num1')[0].value)/parseInt(document.getElementsByName('num2')[0].value)"
+      /><br /><br />
+      <label>Result:</label>
+      <input type="text" id="result" name="result" />
+    </form>
+  </body>
 </html>
